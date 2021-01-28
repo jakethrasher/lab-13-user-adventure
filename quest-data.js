@@ -2,7 +2,7 @@ const wigStore = {
     id: 'wig-shop',
     title: 'The Wig Shop',
     image: 'wig-shop.png',
-    description: `'You walk in the wig shop and you see dozens of pussycat wigs and one stunning blonde lace front. The nice wig is going to set you back $100, but you don't want the reputation of only wearing pussycat wigs. What do you do?'`,
+    description: `You walk into the wig shop and you see dozens of pussycat wigs and one stunning blonde lace front. The nice wig is way more expensive, but you don't want the reputation of only wearing pussycat wigs. What do you do?`,
     //each choice has an id, a description of the choice, a result of the choice, amounth of currency and health
     choices: [{
         id: 'lace-front-wig',

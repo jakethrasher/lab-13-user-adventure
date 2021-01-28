@@ -18,9 +18,7 @@ form.addEventListener('submit', (e) => {
     localStorage.setItem(USER, stringUser);
 
     window.location = '../map/';
-    console.log(user);
 });
 
-const getUser = localStorage.getItem(USER);
-console.log(getUser);
+
 
