@@ -17,7 +17,7 @@ form.addEventListener('submit', (e) => {
 
     localStorage.setItem(USER, stringUser);
 
-    window.location = '../map/';
+    window.location = './map';
 });
 
 
