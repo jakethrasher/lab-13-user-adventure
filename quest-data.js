@@ -57,12 +57,12 @@ const club = {
         id: 'work',
         description: `Time to work!`,
         result: `You earned $200 lip syncing your heart out!`,
-        currency: 200
+        cash: 200
     }, {
         id: 'party',
         description: `Lets drink!`,
         result: `You spent $200 on shots. What a great night!`,
-        currency: -200
+        cash: -200
     }]
 };
 
