@@ -30,12 +30,12 @@ const nailShop = {
     //each choice has an id, a description of the choice, a result of the choice, amounth of currency and health
     choices: [{
         id: 'press-ons',
-        description: `Save cash`,
+        description: `Settle for the press-ons..`,
         result: `You bought yourself some fresh press-ons for $20!`,
         cash: -20,
     }, {
         id: 'acrylics',
-        description: `Spring for the acrylics`,
+        description: `Spring for the acrylics!`,
         result: `Don't break em! You spent $100`,
         cash: -100,
     }, {
@@ -51,7 +51,7 @@ const club = {
     id: 'club',
     title: 'Mickys',
     image: 'club.png',
-    description: `You arrive to work and the place is packed. You can tell people are tipping well. You also run into your drag sister, who is celebrating her birthday. You've got to decide if you're going to pay rent on time this month or kiki with your friends`,
+    description: `You arrive at work and the place is packed. You can tell people are tipping well. You also run into your drag sister, who is celebrating her birthday. You've got to decide if you're going to pay rent on time this month or kiki with your friends...`,
     //each choice has an id, a description of the choice, a result of the choice, amounth of currency and health
     choices: [{
         id: 'work',
