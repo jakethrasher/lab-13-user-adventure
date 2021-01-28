@@ -9,16 +9,19 @@ const wigStore = {
         description: `Get the lace front wig`,
         result: `You leave with a beautiful wig but it sets you back $100`,
         cash:-100,
+        fierceness:50,
     }, {
         id: 'pussycat-wig',
         description: `Go with the less expensive option`,
         result: `You got yourself a new pussycat wig for $50`,
         cash: -50,
+        fierceness:15,
     }, {
         id: 'bald',
-        description: `Hold off for now..`,
-        result: `Go bald darling!`,
-        cash: 0
+        description: `Go bald darling!`,
+        result: `You saved your cash but lost 30 fierceness points!`,
+        cash: 0,
+        fierceness:-30
     }]
 };
 
@@ -33,16 +36,19 @@ const nailShop = {
         description: `Settle for the press-ons..`,
         result: `You bought yourself some fresh press-ons for $20!`,
         cash: -20,
+        fierceness: 20,
     }, {
         id: 'acrylics',
         description: `Spring for the acrylics!`,
         result: `Don't break em! You spent $100`,
         cash: -100,
+        fierceness:50,
     }, {
         id: 'grunge',
         description: `Go for that grunge look..`,
         result: `Keep your dirty claws!`,
-        cash: 0
+        cash: 0,
+        fierceness:-50
      
     }]
 };
@@ -57,12 +63,14 @@ const club = {
         id: 'work',
         description: `Time to work!`,
         result: `You earned $200 lip syncing your heart out!`,
-        cash: 200
+        cash: 200,
+        fierceness:100
     }, {
         id: 'party',
         description: `Lets drink!`,
         result: `You spent $200 on shots. What a great night!`,
-        cash: -200
+        cash: -200,
+        fierceness:-20
     }]
 };
 

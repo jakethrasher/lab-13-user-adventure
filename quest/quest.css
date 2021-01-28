@@ -1,6 +1,14 @@
 .quest-image{
-    width: 80%;
+    width: 70%;
+    margin-top: 10px;
+
 }
 label{
     font-size: 1rem;
+}
+#results{
+    font-size: 1.4rem;
+}
+.hidden{
+    display: none;
 }

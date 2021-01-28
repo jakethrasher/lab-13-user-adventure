@@ -10,7 +10,8 @@ form.addEventListener('submit', (e) => {
         name: formData.get('name'),
         typeOfQueen: formData.get('type-of-queen'),
         cash: 300,
-        completed:{}
+        fierceness: 100,
+        completed: {}
     };
 
     const stringUser = JSON.stringify(user);
