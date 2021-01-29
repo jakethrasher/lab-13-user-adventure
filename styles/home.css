@@ -3,6 +3,10 @@
     font-family: neon;
     src: url('../assets/neon2.ttf')
 }
+@font-face{
+    font-family: sanseriffic;
+    src: url('../assets/Sanseriffic.otf')
+}
 .ask-type-of-queen{
     margin: 0px;
 }
@@ -38,4 +42,17 @@ form{
 }
 .home{
     margin-top: 40px;
+}
+li{
+    display: inline;
+    font-size: 2rem;
+    font-family:sanseriffic;
+    margin: 10px;
+}
+a{  
+    text-decoration: none;
+    color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 4px;
 }

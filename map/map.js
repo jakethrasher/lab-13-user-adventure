@@ -27,5 +27,3 @@ for (let quest of questData) {
     li.append(a);
 
 }
-
-
