@@ -1,3 +1,4 @@
+import { renderStats } from '../map/render-stats.js';
 import questData from '../quest-data.js';
 import { findById } from './find-by-id.js';
 const questTitle = document.querySelector('h1');
@@ -38,7 +39,7 @@ submitButton.type = 'submit';
 form.append(submitButton);
 
 const USER = 'USER';
-
+const user = JSON.parse(localStorage.getItem(USER));
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const formData = new FormData(form);
@@ -48,7 +49,7 @@ form.addEventListener('submit', (e) => {
     const choice = findById(quest.choices, choiceId);
     
     //update local storage object
-    const user = JSON.parse(localStorage.getItem(USER));
+    
     user.cash += choice.cash;
     user.fierceness += choice.fierceness;
     user.completed[questId] = true;
@@ -64,3 +65,5 @@ form.addEventListener('submit', (e) => {
         window.location = '../map/';
     }, 2000);
 });
+
+renderStats(user);

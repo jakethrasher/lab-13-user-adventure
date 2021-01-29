@@ -1,3 +1,4 @@
+import { renderStats } from '../map/render-stats.js';
 import { cashResult } from './cashResult.js';
 const resetButton = document.getElementById('reset-button');
 resetButton.classList.add('button');
@@ -16,6 +17,7 @@ const endCashMessage = cashResult(user.cash);
 
 resultsDiv.textContent = `${user.name}, the ${user.typeOfQueen},  ${endCashMessage}`;
 
+renderStats(user);
 
 
 

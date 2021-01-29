@@ -51,7 +51,7 @@ form{
 }
 li{ 
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-family:sanseriffic;
     margin: 10px;
 }
@@ -74,8 +74,12 @@ main{
     background: linear-gradient(#e66465, #9198e5);
 }
 .stats{
+    color: rgb(60, 53, 203);
+    border: 3px dotted rgb(60, 53, 203);
+    font-style: italic;
     position: absolute;
     right: 5px;
-    top: 150px;
+    
+    top: 10px;
 }
      

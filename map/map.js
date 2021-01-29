@@ -1,4 +1,5 @@
 import questData from '../quest-data.js';
+import { renderStats } from './render-stats.js';
 
 const user = JSON.parse(localStorage.getItem('USER'));
 
@@ -11,7 +12,7 @@ for (let quest of questData) {
 }
 
 //if user is out of cash, redirect them to results
-if (user.cash <= 0 || user.fiercness <= 0 || completedAllQuests) {
+if (user.cash <= 0 || user.fierceness <= 0 || completedAllQuests) {
     window.location = '../results/';
 }
 
@@ -34,3 +35,4 @@ for (let quest of questData) {
     a.append(questImage);
 }
 
+renderStats(user);

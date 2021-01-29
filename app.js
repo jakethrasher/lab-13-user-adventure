@@ -21,7 +21,3 @@ form.addEventListener('submit', (e) => {
 
     window.location = './map';
 });
-
-
-
-// 
