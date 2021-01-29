@@ -14,6 +14,7 @@ const quest = findById(questData, questId);
 questTitle.textContent = quest.title;
 questImage.src = `../assets/${quest.image2}`;
 description.textContent = quest.description;
+description.style.fontSize = '1.3rem';
 
 const form = document.querySelector('form');
 
@@ -22,6 +23,7 @@ const choices = quest.choices;
 for (let choice of choices) {
     const labels = document.createElement('label');
     labels.textContent = choice.description;
+    labels.style.fontSize = '1.3rem';
 
     const radioButtons = document.createElement('input');
     radioButtons.type = 'radio';
@@ -60,5 +62,5 @@ form.addEventListener('submit', (e) => {
     
     setTimeout(function(){
         window.location = '../map/';
-    }, 1800);
+    }, 2000);
 });

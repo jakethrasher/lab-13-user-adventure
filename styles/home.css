@@ -41,7 +41,7 @@ form{
     font-family: neon;
 }
 .home{
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .imgage-container{
     display:flex;
@@ -57,13 +57,13 @@ li{
 }
 .map-image{
     width: 40%;
-    cursor: auto;
+    animation: pulse 3s infinite ease-in-out;
 }
 .map-image:hover{
-    margin: 10px 4px;
     transform: scale(1.1);
     box-shadow: 2px 2px 2px rgb(255, 0, 174);
 }
+    
 .button{
     background: transparent;
     border-radius: 10px;
@@ -72,5 +72,10 @@ li{
 }
 main{
     background: linear-gradient(#e66465, #9198e5);
+}
+.stats{
+    position: absolute;
+    right: 5px;
+    top: 150px;
 }
      

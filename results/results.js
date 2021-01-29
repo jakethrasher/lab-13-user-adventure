@@ -1,9 +1,10 @@
+import { cashResult } from './cashResult.js';
 const resetButton = document.getElementById('reset-button');
 resetButton.classList.add('button');
 const emptyArray = [];
 const user = JSON.parse(localStorage.getItem('USER'));
 const resultsDiv = document.getElementById('results-div');
-
+resultsDiv.style.width = '70%'; 
 
 resetButton.addEventListener('click', () => {
     const stringArray = JSON.stringify(emptyArray);
@@ -11,22 +12,10 @@ resetButton.addEventListener('click', () => {
     window.location = '../.';
 });
 
-const endCashAmount = cashResult(user.cash);
+const endCashMessage = cashResult(user.cash);
 
-resultsDiv.textContent = `${user.name}, the ${user.typeOfQueen},  ${endCashAmount}`;
-
-
+resultsDiv.textContent = `${user.name}, the ${user.typeOfQueen},  ${endCashMessage}`;
 
 
 
-function cashResult(cash) {
-    if (cash < 0) {
-        return `Uh oh looks like you overdrew your bank account. Your current account balance is ${user.cash}. Go back to Micky's and get to work!`;
-    } else if (cash > 300) {
-        return `Condragulations! You will slay another day!$${user.cash - 300}!`;
-    } else return 'You survived another day!';
-}
 
-// function fiercenessResults(fierceness){
-
-// }

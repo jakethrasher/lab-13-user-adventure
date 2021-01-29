@@ -32,5 +32,5 @@ for (let quest of questData) {
     ul.append(li);
     li.append(p, a);
     a.append(questImage);
-
 }
+
