@@ -19,11 +19,18 @@ const ul = document.querySelector('ul');
 
 for (let quest of questData) {
     const li = document.createElement('li');
+    const p = document.createElement('p');
+    p.textContent = quest.title;
     const a = document.createElement('a');
+    const questImage = document.createElement('img');
+    questImage.classList.add('map-image');
+    
 
-    a.textContent = quest.title;
+    questImage.src = `../assets/${quest.image1}`;
+    
     a.href = `../quest/?id=${quest.id}`;
     ul.append(li);
-    li.append(a);
+    li.append(p, a);
+    a.append(questImage);
 
 }

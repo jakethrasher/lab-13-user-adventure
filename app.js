@@ -1,6 +1,7 @@
 const form = document.querySelector('form');
 const USER = 'USER';
-
+const main = document.querySelector('main');
+main.style.height ='100%';
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 

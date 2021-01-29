@@ -13,12 +13,13 @@ body {
     --color4: hsla(45, 73%, 98%, 1);
     --color5: hsla(224, 40%, 79%, 1); */
     
-    --header-height: 80px;
+    
     --gutter: 30px;
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: salmon;
+    /* background-color: rgba(242, 42, 219, 0.646); */
+    /* background-color: salmon; */
 }
 
 main {
@@ -45,6 +46,7 @@ section {
 }
 
 header {
+    height: 80px;
     display: flex;
     justify-content: flex-end;
     background-color: var(--color3);

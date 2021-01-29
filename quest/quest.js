@@ -12,7 +12,7 @@ const questId = params.get('id');
 const quest = findById(questData, questId);
 
 questTitle.textContent = quest.title;
-questImage.src = `../assets/${quest.image}`;
+questImage.src = `../assets/${quest.image2}`;
 description.textContent = quest.description;
 
 const form = document.querySelector('form');
@@ -62,16 +62,3 @@ form.addEventListener('submit', (e) => {
         window.location = '../map/';
     }, 1800);
 });
-
-/*displaying the choice results
-make div for results in html, if there is also a submit button in the div make a span for text. grab dom elements
-span.textContent = choice.results
-
-may need a back to map button
-backToMapButton.addEventListener('click', ()=>{
-    windwow.location = '../map/'
-})
-
-or
-set timer?? that redirects to map after certain amount of time
-*/

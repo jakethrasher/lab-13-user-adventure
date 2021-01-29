@@ -1,7 +1,8 @@
 const wigStore = {
     id: 'wig-shop',
     title: 'The Wig Shop',
-    image: 'wig-shop.png',
+    image1: 'wig-map-img.png',
+    image2: 'wig-quest-image.png',
     description: `You walk into the wig shop and you see dozens of pussycat wigs and one stunning blonde lace front. The nice wig is way more expensive, but you don't want the reputation of only wearing pussycat wigs. What do you do?`,
     //each choice has an id, a description of the choice, a result of the choice, amounth of currency and health
     choices: [{
@@ -28,7 +29,8 @@ const wigStore = {
 const nailShop = {
     id: 'nail-shop',
     title: 'Lovely Nails',
-    image: 'nail-shop.png',
+    image1: 'nails-map-image.png',
+    image2: 'nail-shop.png',
     description: `You've been wearing press-ons for quite some time but youre ready to step it up a notch. You could get a new set of acrylics for $75 or save some cash and get some fresh press-ons. What do you do?`,
     //each choice has an id, a description of the choice, a result of the choice, amounth of currency and health
     choices: [{
@@ -56,7 +58,8 @@ const nailShop = {
 const club = {
     id: 'club',
     title: 'Mickys',
-    image: 'club.png',
+    image1: 'club-map-image.png',
+    image2: 'club.png',
     description: `You arrive at work and the place is packed. You can tell people are tipping well. You also run into your drag sister, who is celebrating her birthday. You've got to decide if you're going to pay rent on time this month or kiki with your friends...`,
     //each choice has an id, a description of the choice, a result of the choice, amounth of currency and health
     choices: [{
