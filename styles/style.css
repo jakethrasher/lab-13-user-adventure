@@ -13,13 +13,13 @@ body {
     --color4: hsla(45, 73%, 98%, 1);
     --color5: hsla(224, 40%, 79%, 1); */
     
-    --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    
     --gutter: 30px;
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    /* background-color: rgba(242, 42, 219, 0.646); */
+    /* background-color: salmon; */
 }
 
 main {
@@ -39,13 +39,14 @@ section {
     justify-content: center;
     align-items: center;
     padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
+    /* padding-bottom: var(--gutter); */
+    /* margin-top: var(--gutter); */
+    /* margin-bottom: var(--gutter); */
     border: solid 2px var(--color1);
 }
 
 header {
+    height: 80px;
     display: flex;
     justify-content: flex-end;
     background-color: var(--color3);
@@ -101,19 +102,19 @@ footer {
   
   @keyframes pulse {
     20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+      transform: rotate3d(-3, -10, -10,10deg) scale(1);
     }
 
     40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
+        transform: rotate3d(10, 10, -10,10deg) scale(1);
     }
 
     60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
+        transform: rotate3d(-10, 10, 10,10deg) scale(1.);
       }
 
     80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
+        transform: rotate3d(10, 10, 10,10deg) scale(1);
     }
 
   }

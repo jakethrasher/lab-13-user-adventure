@@ -1,0 +1,8 @@
+main{
+    background: linear-gradient(#e66465, #9198e5);
+    height: 100%;
+}
+#results-div{
+    text-align: center;
+    margin-bottom: 20px;
+}
