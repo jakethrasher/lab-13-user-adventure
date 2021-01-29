@@ -17,6 +17,9 @@ questImage.src = `../assets/${quest.image2}`;
 description.textContent = quest.description;
 description.style.fontSize = '1.3rem';
 
+const audio = document.querySelector('audio');
+audio.src = `../assets/${quest.audio}`;
+
 const form = document.querySelector('form');
 
 const choices = quest.choices;
@@ -63,7 +66,7 @@ form.addEventListener('submit', (e) => {
     
     setTimeout(function(){
         window.location = '../map/';
-    }, 2000);
+    }, 2500);
 });
 
 renderStats(user);
